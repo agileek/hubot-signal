@@ -1,0 +1,33 @@
+{
+    "name": "hubot-signal",
+    "version": "1.0.0",
+    "description": "Signal hubot adapter",
+    "main": "src/signal.coffee",
+    "dependencies": {
+      "parent-require": "^1.0.0"
+    },
+    "peerDependencies": {
+        "hubot": ">=2.0"
+    },
+    "devDependencies": {
+        "coffee-script": ">=1.2.0"
+    },
+    "scripts": {
+        "test": "none"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/agileek/hubot-signal.git"
+    },
+    "keywords": [
+        "hubot",
+        "signal",
+        "adapter"
+    ],
+    "author": "Bitard Michaël",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/agileek/hubot-signal/issues"
+    },
+    "homepage": "https://github.com/agileek/hubot-signal#readme"
+}
