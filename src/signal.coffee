@@ -45,7 +45,7 @@ class Signal extends Adapter
         signal.stderr.on 'data', (data) -> console.log data.toString().trim()
 
     parseMessage: (message) ->
-      return username: '+33605040302'
+      return username: message.match(/\+[0-9]+/)[0]
 
 
 exports.use = (robot) ->

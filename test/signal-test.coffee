@@ -14,3 +14,8 @@ describe 'XmppBot', ->
       result = bot.parseMessage message
 
       assert.equal result.username, '+33605040302'
+
+      message = 'Envelope from: +33605040301 (device: 1)'
+      result = bot.parseMessage message
+
+      assert.equal result.username, '+33605040301'
