@@ -10,10 +10,13 @@
         "hubot": ">=2.0"
     },
     "devDependencies": {
-        "coffee-script": ">=1.2.0"
+        "coffee-script": ">=1.2.0",
+        "sinon": "1.9.0",
+        "mocha": "1.15.1",
+        "hubot": ">=2.0"
     },
     "scripts": {
-        "test": "none"
+        "test": "mocha --require coffee-script/register --compilers coffee:coffee-script test/*.coffee"
     },
     "repository": {
         "type": "git",

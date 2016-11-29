@@ -9,9 +9,8 @@ String::startsWith ?= (s) -> @slice(0, s.length) == s
 
 class Signal extends Adapter
 
-    constructor: ->
-        super
-        @robot.logger.info "Constructor"
+    constructor: ( robot ) ->
+      @robot = robot
 
     send: (envelope, strings...) ->
         @robot.logger.info "Send"
@@ -44,6 +43,9 @@ class Signal extends Adapter
             console.log "wouhouuuuu"
           # @receive new TextMessage user, data, 'messageId'
         signal.stderr.on 'data', (data) -> console.log data.toString().trim()
+
+    parseMessage: (message) ->
+      return username: '+33605040302'
 
 
 exports.use = (robot) ->
