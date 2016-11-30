@@ -19,3 +19,12 @@ describe 'XmppBot', ->
       result = bot.parseMessage message
 
       assert.equal result.username, '+33605040301'
+
+    it 'should parse Body to extract content', ->
+      message = """Timestamp: 1480507876164 (2016-11-30T12:11:16.164Z)
+Message timestamp: 1480507876164 (2016-11-30T12:11:16.164Z)
+Body: Plop
+"""
+      result = bot.parseMessage message
+
+      assert.equal result.body, 'Plop'
