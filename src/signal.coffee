@@ -33,14 +33,16 @@ class Signal extends Adapter
 
     buildCli: () ->
         signal = spawn( @options.path, [ '-u', @options.username, 'receive', '-t', '-1' ] );
-        messages_received = []
-        signal.stdout.on 'data', (data) ->
-          value = data.toString().trim()
-          messages_received.push(value)
-          console.log value
-          console.log "haha"
-          if (value.substring(0,5) == "Body:")
-            console.log "wouhouuuuu"
+        signal.stdout.on 'data', (data) =>
+          parsedMessage = @parseMessage(data.toString().trim())
+          @robot.logger.info parsedMessage
+          if (parsedMessage.username?)
+            @robot.logger.info "Sending"
+
+            user = @robot.brain.userForId 1, name: parsedMessage.username, room: 'Signal'
+            @robot.logger.info user
+            @receive new TextMessage('*', 'badger')
+
           # @receive new TextMessage user, data, 'messageId'
         signal.stderr.on 'data', (data) -> console.log data.toString().trim()
 
