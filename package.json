@@ -2,10 +2,7 @@
     "name": "hubot-signal",
     "version": "1.0.0",
     "description": "Signal hubot adapter",
-    "main": "src/signal.coffee",
-    "dependencies": {
-      "parent-require": "^1.0.0"
-    },
+    "main": "src/signal",
     "peerDependencies": {
         "hubot": ">=2.0"
     },

@@ -1,9 +1,9 @@
 Bot = require '../src/signal'
 
-{Adapter,Robot,EnterMessage,LeaveMessage,TextMessage} = require 'hubot'
+{Adapter, Robot, EnterMessage, LeaveMessage, TextMessage} = require 'hubot'
 
 assert = require 'assert'
-sinon  = require 'sinon'
+sinon = require 'sinon'
 
 describe 'XmppBot', ->
   describe '#parseMessages()', ->
