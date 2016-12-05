@@ -28,3 +28,13 @@ Body: Plop
       result = bot.parseMessage message
 
       assert.equal result.body, 'Plop'
+
+    it 'should parse and extract All', ->
+      message = """Envelope from: +33605040302
+Timestamp: 1480941940320 (2016-12-05T12:45:40.320Z)
+Body: badger
+"""
+      result = bot.parseMessage message
+
+      assert.equal result.body, 'badger'
+      assert.equal result.username, '+33605040302'
