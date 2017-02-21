@@ -1,1 +1,9 @@
 language: node_js
+deploy:
+  provider: npm
+  email: bitard.michael@gmail.com
+  api_key:
+    secure: eoeTFwqU/FejcrDmz9JLr3Kpy2vGfUTb7gyBOWa0YPk+Jss1nrdQV82qvybU0J0YlKdQIJR4wfcuAyAH1evTMN54qJm+npN+nwqKJvJvYaGEcRwKQqq0IY3Peg7vYU8bz7V/EPHp7KS488Vwheeer3kwQK7MM0HzxqZ1psV8rujMGubY73XhRGX50rw0/D3aQwo9KAoZAfHy7oTHOLW3aY4aGCJLK5Acoc8X5OUGqBPKrcWkTr8ThNgdftfxTvtpbxshxE12B+OlmEmU02TXD3ifshm/wmJ0dRmRhIm4C9bl1DPBq/17BiYjEz8kXw/YIsD5lRDDfG/hm7jHgNtX0GkuL1Y0zPzFnw6JPUagn2k8y+9zaMeDEV1OMg/Be847VUUyHrCOiROF8FB0sFV6IP08QlOnoJoSCUnp2Me5aqNj1KcEi6YLBWA1dbwtcA5M2ssY/R2TTWWHZEkCbqa2Ihv5Km991fO8RT+HjEr/Y0M4MkSToT27z0s+mxgFbSatgd3+aY+tW+Gj4E8XQ8Apc+cansyyWpfyP7SdA2559msOymtuhOSK77mydnR9Njmk9jcNJqOqCX003wrZUByEB5cY/GFxjevi5zTe2SMSSSVvehCjuhFXAJpttjFgTrH3jKcn6SC16YMHFPkY2wVKq3Yz0DFxCye9HabTpO+e5CE=
+  on:
+    tags: true
+    repo: agileek/hubot-signal
