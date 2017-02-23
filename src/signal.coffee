@@ -1,7 +1,6 @@
 {Adapter, Robot, TextMessage} = require 'hubot'
 {spawn} = require('child_process')
 util = require 'util'
-String::startsWith ?= (s) -> @slice(0, s.length) == s
 
 class Signal extends Adapter
 
