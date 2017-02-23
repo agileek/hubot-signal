@@ -1,6 +1,8 @@
 # Signal adapter for hubot
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://tldrlegal.com/license/mit-license#summary)
 [![Build Status](https://travis-ci.org/agileek/hubot-signal.svg?branch=master)](https://travis-ci.org/agileek/hubot-signal)
+[![codecov](https://codecov.io/gh/agileek/hubot-signal/branch/master/graph/badge.svg)](https://codecov.io/gh/agileek/hubot-signal)
+
 
 [![NPM](https://nodei.co/npm/hubot-signal.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hubot-signal/)
 
